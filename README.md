@@ -217,3 +217,128 @@ print(a)    # Maggi
 print(b)    # Maggi
 print(c)    # Maggi
 ```
+
+## Mathematical Operators
+
+The mathematical operators in Python are :
+
+- **Addition Operator**
+- **Subtraction Operator**
+- **Multiplication Operator**
+- **Division Operator**
+- **Modulo Operator** => gives the remainder
+- **Exponentiation Operator** => compute the power of any number
+
+## String Concatenation
+
+- Concatenation means a series of interconnected things.
+- Use **+** to join two or more string
+
+```
+  a="Hii...."
+  b="Sam...."
+  print(a+b)          # Hii....Sam....
+```
+
+## Comparison Operators
+
+Comparison operators are used for comparing two values.
+
+- There are 6 comparison operators:
+  - **> (Greater Than)**
+  - **>= (Greater Than Equal To)**
+  - **< (Less Than)**
+  - **<= (Less Than Equal To)**
+  - **== (Equal)**
+  - **!= (not Equal)**
+- The result of a comparison operator is always a boolean value.
+
+## Logical Operators
+
+A logical operator is a symbol or word used to connect two or more expressions.
+
+## Types of Logical Operators
+
+Python provides three logical operators:
+
+1. and
+2. or
+3. not
+
+## Conditional Statements
+
+Conditional Statements in Python perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false.
+
+- Conditional statements are used **to decide the flow of execution based on different conditions**. If a condition is true, you can perform one action and if the condition is false, you can perform another action.
+- Through Conditional Statements, we can control which code needs to run or which code will not run.
+
+For Example: the traffic light controls the flow of vehicles on the road.
+
+- Depending upon the color of the light, the actions happened.
+- If the light is green, then it is a signal to move.
+- If the light is red then it is a signal to stop.
+
+## Different Types of Conditional Statements
+
+There are four types of conditional statements in Python.
+
+1. If statement
+2. If…Else statement
+3. If…Elif…Else statement
+4. Nested If
+
+## Ternary Operator
+
+- Ternary operators also known as **conditional expressions** are operators that evaluate something based on a condition being true or false.
+- It was added to Python in version **2.5.**
+- It simply allows testing a condition in a **single line** replacing the multiline if-else making the code compact.
+- Syntax➖
+  ```
+  [on_true] if [expression] else [on_false]
+  ```
+- For ex-
+
+  ```
+  # to check whether a number is odd or even
+  a=10;
+  print("Even Number") if(a%2==0) else print("Odd Number");
+
+  x = 5
+  result = "Greater" if x > 10 else "Equal" if x == 10 else "Less"
+  print(result)
+  ```
+
+## WHILE LOOP
+
+```
+  starting_point  # called as initialization
+
+  while(till_when_he_will_jump):     # condition to terminate the loop
+
+	# operation that is to be performed
+
+	how_many_jump_at_a_time          # Increment/decrement
+```
+
+### Break
+
+- **Break** means to come out of the loop and stop the execution.
+
+### Continue
+
+- **Continue** is basically saying go back to the condition.
+
+## The else Statement with While in Python
+
+With the else statement we can run a block of code once when the condition no longer is true:
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+```
+
+## FOR LOOP
