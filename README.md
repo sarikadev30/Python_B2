@@ -342,3 +342,37 @@ else:
 ```
 
 ## FOR LOOP
+
+## NESTED LOOP
+
+## DATA TYPES
+
+### 1. Primitive Data Types (also called basic or built-in types)
+
+These are the most **basic types of data**, directly supported by the Python language.
+
+| Data Type | Description                      | Example         |
+| --------- | -------------------------------- | --------------- |
+| `int`     | Integer numbers                  | `10`, `-5`, `0` |
+| `float`   | Decimal (floating point) numbers | `3.14`, `-0.1`  |
+| `bool`    | Boolean values (True or False)   | `True`, `False` |
+| `str`     | Text (string of characters)      | `"Hello"`       |
+
+> **Note:** These are immutable (cannot be changed after creation).
+
+---
+
+### 2. Non-Primitive Data Types (also called complex or user-defined types)
+
+These are built using primitive types.
+They can store **multiple values** and offer **more functionality**.
+
+| Data Type         | Description                     | Example                 |
+| ----------------- | ------------------------------- | ----------------------- |
+| `list`            | Ordered, mutable collection     | `[1, 2, 3]`             |
+| `tuple`           | Ordered, immutable collection   | `(1, 2, 3)`             |
+| `set`             | Unordered, unique items         | `{1, 2, 3}`             |
+| `dict`            | Key-value pairs                 | `{"name": "Sam"}`       |
+| `array`           | Like lists, from `array` module | `array('i', [1, 2, 3])` |
+| `class`, `object` | Custom types defined by user    | OOP structures          |
+| `function`        | Callable object                 | `def greet(): ...`      |

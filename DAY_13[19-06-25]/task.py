@@ -26,9 +26,9 @@
 # Set 1 round 2
 # Set 1 round 3
 
-# for i in range(1, 6):
-#     for j in range(1, 5):
-#         print(i, j)
+for i in range(1, 6):
+    for j in range(1, 5):
+        print(i, j)
 
 # 1 2 3 4 5
 # 1 2 3 4
