@@ -76,3 +76,16 @@ stationary.extend(["pen", "pencil", "notebooks", "marker", "Eraser", "Sharpner"]
 # i=6
 arr = [45, 56, 89, 12, 100, 39, 12, 12]
 print(arr.index(12))
+
+# Pallindrome
+i = 0
+j = len(arr) - 1
+ans = True
+while i <= j:
+    if arr[i] != arr[j]:
+        ans = False
+        break
+    i += 1
+    j -= 1
+
+print(ans)
