@@ -548,3 +548,106 @@ Exception, ValueError, etc.
 
 Python looks for a variable in this order: Local → Enclosing → Global → Built-in
 print(len("Python")) # 'len' is a built-in function
+
+## File Handling
+
+### Files
+
+- Files are a way to store data permanently on your computer.
+- Python can open files, read their contents, write new information, and close them when done.
+- Files can be text-based (like `.txt`), or more structured formats like `.csv`.
+
+**Key Concepts:**
+
+- **Opening a file:**
+  Before reading or writing, we must open a file.
+- **Closing a file:**
+  After finishing with file operations, we close it, so the system knows we’re done and all changes are saved.
+- **File Modes:**
+  Determine how we interact with the file (read-only, write-new, append, etc.)
+
+---
+
+### Need of Files
+
+If you need to store large amounts of data, user preferences, or logs, relying on variables isn’t enough. Files let you:
+
+- Preserve data after the program ends.
+- Share data between different runs of your program.
+- Process bigger data sets that you can’t hard-code into variables.
+
+```
+  file = open("data.txt", "r")  # opens data.txt in read mode
+  print(file)
+
+
+  file.close()  # close the file after finishing
+```
+
+```
+  with open("data.txt", "r") as f:
+    content = f.read()
+    print(content)
+  # File is automatically closed after the with-block ends
+```
+
+## Multi Dimensional List
+
+## OOPS
+
+OOP is a programming paradigm that organizes code into **objects** that combine **data (attributes)** and **functions (methods)**.
+
+Python supports OOP fully using the `class` keyword.
+
+- **Class**: A blueprint for creating objects.
+- **Object**: An instance of a class containing data and behavior.
+
+```python
+class Person:
+    def speak(self):
+        print("Hello!")
+
+p1 = Person()  # Object
+p1.speak()
+
+```
+
+```
+# Class => blue print  # Object => instance of the class
+# Person => name , age  ,city fun => print all the things
+
+
+class Person:
+    # Class variables
+    name = "Sam"
+
+    def fun(self):
+        print("Hi!...User", f"Bye...{self.name}")
+
+
+#  Creating Object of Person class (instance of the class)
+x = Person()
+Y = Person()
+x.fun()
+Y.fun()
+
+
+class Person:
+    # Class variables
+    city = "NewYork"
+
+    def __init__(self, name):
+        self.name = name  # Instance Variables
+        print(f"Hi!....{name}, Welcome to {self.city}")
+
+    def fun(self):
+        print("Hi!...User", f"Bye...{self.name}")
+
+
+#  Creating Object of Person class (instance of the class)
+x = Person("SAM")
+x.fun()
+
+```
+
+---
